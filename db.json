@@ -20,6 +20,13 @@
             "name": "Vitamins",
             "nominal": 200000,
             "category": "health"
+        },
+        {
+            "date": "2023-03-25",
+            "name": "Coffee",
+            "nominal": 80000,
+            "category": "food",
+            "id": 4
         }
     ]
 }
