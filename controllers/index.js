@@ -1,2 +1,4 @@
 const expensesController = require("./expensesController");
-module.exports = { expensesController };
+const usersController = require("./usersController");
+
+module.exports = { expensesController, usersController };

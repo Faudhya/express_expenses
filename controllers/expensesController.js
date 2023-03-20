@@ -84,4 +84,21 @@ module.exports = {
             });
         }
     },
+    updateExpenses: async (req, res) => {
+        let idParams = parseInt(req.params.id);
+        let data = JSON.parse(fs.readFileSync("./db.json"));
+        let expenses = data.expenses;
+        let index = expenses.findIndex((expense) => expense.id == idParams);
+
+        const keys = Object.keys(req.body);
+        if (index == -1 || keys.length === 0) {
+            res.status(400).send("Error: Expense ID does not exist");
+        } else {
+            keys.forEach((key) => {
+                expenses[index][key] = req.body[key];
+            });
+            fs.writeFileSync("./db.json", JSON.stringify(data));
+            res.status(200).send(`Expense no. ${idParams} has been updated`);
+        }
+    },
 };

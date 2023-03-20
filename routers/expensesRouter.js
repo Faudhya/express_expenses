@@ -7,5 +7,6 @@ router.get("/:id", expensesController.fetchExpenseById);
 router.delete("/:id", expensesController.deleteExpenseById);
 router.post("/", expensesController.addExpenses);
 router.put("/:id", expensesController.editExpenses);
+router.patch("/:id", expensesController.updateExpenses);
 
 module.exports = router;
