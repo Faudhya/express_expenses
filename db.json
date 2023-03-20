@@ -1,0 +1,25 @@
+{
+    "expenses": [
+        {
+            "id": 1,
+            "date": "2023-03-1",
+            "name": "Meatballs",
+            "nominal": 15000,
+            "category": "food"
+        },
+        {
+            "id": 2,
+            "date": "2023-03-20",
+            "name": "Coffee",
+            "nominal": 15000,
+            "category": "food"
+        },
+        {
+            "id": 3,
+            "date": "2023-03-15",
+            "name": "Vitamins",
+            "nominal": 200000,
+            "category": "health"
+        }
+    ]
+}
