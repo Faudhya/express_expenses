@@ -9,10 +9,10 @@
         },
         {
             "id": 2,
-            "date": "2023-03-20",
-            "name": "Coffee",
+            "date": "2023-03-10",
+            "name": "Movie Night",
             "nominal": 15000,
-            "category": "food"
+            "category": "entertainment"
         },
         {
             "id": 3,
